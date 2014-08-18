@@ -1,0 +1,47 @@
+<nav class="navbar navbar-custom navbar-static-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Campaign<strong>Builder</strong>.org</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="<%- current.source == 'index' ? 'active' : '' %>"><a href="/">Home</a></li>
+        <li class="<%- current.source == 'about' ? 'active' : '' %>"><a href="about.html">About</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="login text-center">
+  <div class="alert">
+    <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></div>
+          <label class="sr-only" for="loginEmail">Email</label>
+          <input class="form-control" id="loginEmail" type="email" placeholder="Enter email">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon"><i class="fa fa-fw fa-asterisk"></i></div>
+            <label class="sr-only" for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+          </div>
+        </div>
+      </div>
+      <a href="dashboard.html" class="btn btn-primary">Log in</a>
+    </form>
+  </div>
+</div>
