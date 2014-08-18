@@ -47,8 +47,8 @@
 .navbar-custom {
   background-color: $brand-primary;
   margin-bottom: 0;
-  //border-bottom: 2px solid rgba(0,0,0,0.1);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  //box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 
   a {
     color: #fff;
@@ -117,6 +117,34 @@ footer {
   border-style: solid;
 }
 
+.featured-videos {
+  background: #333;
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+
+    &:first-of-type {
+      border-bottom: 2px solid rgba(0,0,0,0.1);
+    }
+
+    li {
+      color: #fff;
+      padding: 10px 0;
+      min-height: 200px;
+      border-right: 2px solid rgba(0,0,0,0.1);
+
+        .inner {
+          max-width: 420px;
+          margin: 0 auto;
+        }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
 .action-bar {
   //background: lighten( $brand-primary, 15%);
 
