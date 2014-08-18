@@ -1,3 +1,6 @@
+//$border-radius-base: 0;
+//$border-radius-large: 0;
+//$border-radius-small: 0;
 
 @import 'bootstrap';
 
@@ -45,6 +48,7 @@
 }
 
 .navbar-custom {
+  text-align: center;
   background-color: $brand-primary;
   margin-bottom: 0;
   border-bottom: 2px solid rgba(255,255,255,0.3);
@@ -66,6 +70,13 @@
   			background: none;
   			border-color: #fff;
   		}
+    }
+
+    &.active {
+      a {
+        color: #fff;
+        //border-bottom: 2px solid rgba(255,255,255,0.3);
+      }
     }
   }
 
@@ -90,6 +101,11 @@
     background: #f5f5f5;
   }
 
+  .input-group-addon {
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+  }
+
   .close {
     padding-top: 5px;
   }
@@ -104,25 +120,33 @@
 
 
 footer {
-  margin-top: 20px;
+  padding: 10px 0;
+  color: #aaa;
+  background: #333;
+  border-top: 2px solid #aaa;
 }
 
-.panel-title > span {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 35px;
-  text-align: center;
-  margin-right: 15px;
-  color: #fff;
-  background-color: $brand-primary;
-  border-radius: 50%;
-  border-width: 2px;
-  border-style: solid;
+.panel-title {
+  span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+  }
 }
 
 .featured-videos {
   background: #333;
+  .panel-title {
+    span {
+      color: rgba(0,0,0,0.3);
+    }
+  }
 
   ul {
     list-style: none;
@@ -151,6 +175,12 @@ footer {
 }
 .action-bar {
   //background: lighten( $brand-primary, 15%);
+  .panel-title {
+    span {
+      color: #fff;
+      background-color: $brand-primary;
+    }
+  }
 
   ul {
     list-style: none;
@@ -168,10 +198,6 @@ footer {
 
       &:last-child {
         border: none;
-      }
-
-      .panel-title {
-        //color: #fff;
       }
 
       &.donate {
@@ -197,6 +223,12 @@ footer {
 
 .about {
   //background: lighten( $brand-primary, 15%);
+  .panel-title {
+    span {
+      color: #fff;
+      background-color: $brand-primary;
+    }
+  }
 
   ul {
     list-style: none;
@@ -224,11 +256,56 @@ footer {
 }
 
 
+.media-content {
+  //background: lighten( $brand-primary, 15%);
+  .panel-title {
+    span {
+      color: #fff;
+      background-color: $brand-primary;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+
+    li {
+      padding: 10px 0;
+      min-height: 250px;
+      border-right: 2px solid rgba(0,0,0,0.1);
+
+        .inner {
+          //max-width: 420px;
+          margin: 0 auto;
+        }
+
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+
+  .list-group-meta{
+    .type {
+      margin-right: 15px;
+    }
+  }
+
+  .list-group-item {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
 .stream {
   text-align: center;
-  padding-bottom: 500px;
+  padding-bottom: 50px;
   background: #f5f5f5 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAWSjEh8SSD7OUwAzAFJggTgHJAAAEkuAx5OdRJCAAAAAElFTkSuQmCC) repeat;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
 }
 
 ul.stream-nav {
@@ -260,14 +337,12 @@ ul.stream-nav {
 
 .stream-content {
   //background: lighten( $brand-primary, 15%);
+  padding-bottom: 500px;
 
   ul {
     list-style: none;
     margin-bottom: 0;
-
-    &:first-of-type {
-      border-bottom: 2px solid rgba(0,0,0,0.1);
-    }
+    border-bottom: 2px solid rgba(0,0,0,0.1);
 
     li {
       padding: 10px 0;
