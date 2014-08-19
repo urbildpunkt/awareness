@@ -26,8 +26,8 @@ var fixed = position.top - 50;
 var set = 'translateY(-' + fixed + 'px)';
 $('.stream .edit').on('click', function() {
   $('.stream').css({'-webkit-transform': set});
-  $('#navbar-stream').hide();
-  $('#navbar-stream-edit').show();
+  $('.stream-nav').hide();
+  $('.stream-nav-edit').show();
 });
 
 $('.save').on('click', function() {
