@@ -24,8 +24,8 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-site">
+        <span class="sr-only">Menu</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -34,10 +34,10 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar-site">
       <ul class="nav navbar-nav navbar-right">
         <li class=""><a href="index.html">Home</a></li>
-        <li class="active"><a href="media.html">Latest</a></li>
+        <li class=""><a href="latest.html">Latest</a></li>
         <li class=""><a href="about.html">About</a></li>
         <li><a href="#">Partners</a></li>
         <li><a href="#">Contact</a></li>
@@ -74,20 +74,34 @@
 <div class="container-fluid media-content">
   <ul class="row">
     <li class="col-md-8 col-md-push-4">
+      <span class="edit"><a class="btn btn-sm btn-warning"><i class="fa fa-fw fa-pencil"></i><span> Edit</span></a></span>
       <div class="inner">
-        <div class="panel-heading">
-          <h3 class="panel-title text-center">Latest News Headline</h3>
-        </div>
-        <div class="panel-body">
-          <p>Here</p>
-        </div>
+        <strong class="type"><i class="fa fa-fw fa-file-text"></i> Press Release</strong>
+        <h3>Our Monthly Status Update Press Release</h3>
+        <span class="date"><i class="fa fa-fw fa-clock-o"></i> October 01, 2014</span>
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
       </div>
     </li>
     <li class="col-md-4 col-md-pull-8">
+      <span class="save"><a href="latest.html" class="btn btn-sm btn-success"><i class="fa fa-fw fa-check"></i><span> Save</span></a></span>
       <div class="inner">
         <div class="panel-heading">
           <h3 class="panel-title text-center"><span><i class="fa fa-fw fa-rss"></i></span> The Latest</h3>
         </div>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">In the News</a></li>
+          <li><a href="#">Press Releases</a></li>
+        </ul>
         <div class="panel-body">
           <div class="feed-list">
             <a href="#" class="list-group-item">
@@ -112,9 +126,36 @@
                 <span class="date"><i class="fa fa-fw fa-clock-o"></i> 10.01.14</span>
               </p>
               <h4 class="list-group-item-heading">Another News Headline</h4>
+              <p class="list-group-item-text"><strong>News Source Name</strong></p>
+            </a>
+            <a href="#" class="list-group-item">
+              <p class="list-group-meta">
+                <strong class="type"><i class="fa fa-fw fa-file-text"></i> Press Release</strong>
+                <span class="date"><i class="fa fa-fw fa-clock-o"></i> 10.01.14</span>
+              </p>
+              <h4 class="list-group-item-heading">Latest News Headline</h4>
               <p class="list-group-item-text">Loren getsum dolor sit amet, consectetur adipiscing elit. Proin pharetra lectus ut rhoncus suscipit.</p>
             </a>
+            <a href="#" class="list-group-item">
+              <p class="list-group-meta">
+                <strong class="type"><i class="fa fa-fw fa-quote-left"></i> In the News</strong>
+                <span class="date"><i class="fa fa-fw fa-clock-o"></i> 10.01.14</span>
+              </p>
+              <h4 class="list-group-item-heading">Another News Headline</h4>
+              <p class="list-group-item-text"><strong>News Source Name</strong></p>
+            </a>
           </div>
+        </div>
+        <div class="text-center">
+          <ul class="pagination pagination-sm">
+            <li><a href="#"><i class="fa fa-fw fa-angle-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-angle-right"></i></a></li>
+          </ul>
         </div>
       </div>
     </li>
@@ -123,16 +164,78 @@
 
 
       <div class="stream">
+  <nav class="navbar navbar-stream navbar-static-top" role="navigation">
+    <span class="edit"><a class="btn btn-sm btn-warning"><i class="fa fa-fw fa-pencil"></i><span> Edit</span></a></span>
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-stream">
+          <span class="sr-only">Filter</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="stream-hashtag">#hashtag</div>
+      </div>
 
-  <ul class="nav stream-nav">
-    <li><h4>#hashtag</h4></li>
-    <li><a href="#">Filter</a></li>
-    <li><a href="#">Filter</a></li>
-    <li><a href="#">Filter</a></li>
-  </ul>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="navbar-stream">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#">Filter</a></li>
+        </ul>
+        <ul class="nav navbar-nav" id="navbar-stream-edit">
+          <li class="active"><a href="#">Drafts</a></li>
+          <li><a href="#">Approved</a></li>
+          <li><a href="#">Filter</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+
 
   <div class="container-fluid stream-content">
     <ul class="row">
+      <li class="col-sm-6 col-md-3">
+        <div class="inner">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center"><span><i class="fa fa-fw fa-youtube-play"></i></span> Youtube Video</h3>
+          </div>
+          <div class="panel-body">
+            <p>Here</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-6 col-md-3">
+        <div class="inner">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center"><span><i class="fa fa-fw fa-twitter"></i></span> Tweet</h3>
+          </div>
+          <div class="panel-body">
+            <p>Here</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-6 col-md-3">
+        <div class="inner">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center"><span><i class="fa fa-fw fa-instagram"></i></span> Photo</h3>
+          </div>
+          <div class="panel-body">
+            <p>Here</p>
+          </div>
+        </div>
+      </li>
+      <li class="col-sm-6 col-md-3">
+        <div class="inner">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center"><span><i class="fa fa-fw fa-youtube-play"></i></span> Youtube Video</h3>
+          </div>
+          <div class="panel-body">
+            <p>Here</p>
+          </div>
+        </div>
+      </li>
       <li class="col-sm-6 col-md-3">
         <div class="inner">
           <div class="panel-heading">
@@ -185,7 +288,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
 
         <script src="js/main.js"></script>
 
