@@ -8,6 +8,16 @@
   display: none;
 }
 
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.affix {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
 ul.row {
   padding: 0;
 }
@@ -136,6 +146,11 @@ a {
     bottom: 22px;
     right: 10px;
   }
+}
+
+.nav > li.settings > a {
+  display: none;
+  color: rgba(0,0,0,0.6)
 }
 
 .jumbotron {
@@ -564,6 +579,9 @@ footer {
   margin-bottom: 0;
   border-top: 2px solid $brand-primary;
   border-bottom: 1px solid rgba(0,0,0,0.3);
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
 
   li {
     margin-bottom: -2px;

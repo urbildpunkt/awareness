@@ -1,3 +1,10 @@
+/* affix the navbar after scroll below header */
+$('.navbar-stream').affix({
+      offset: {
+        top: $('.stream').position().top
+      }
+});
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
@@ -11,6 +18,11 @@ $(document).keyup(function(e) {
 
 $('.login .close').on('click', function() {
   $('.login').toggleClass('open');
+});
+
+$('.btn-login').on('click', function() {
+  $('.login').toggleClass('open');
+  $('.settings a').css('display', 'block');
 });
 
 $('.edit').on('click', function() {
@@ -31,6 +43,7 @@ $('.stream .edit').on('click', function() {
   $('input').css({'visibility': 'hidden'});
   $('.stream-nav').hide();
   $('.stream-nav-edit').show();
+  $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
 $('.save').on('click', function() {
