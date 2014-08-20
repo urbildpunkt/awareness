@@ -25,7 +25,10 @@ var position = stream.position();
 var fixed = position.top - 50;
 var set = 'translateY(-' + fixed + 'px)';
 $('.stream .edit').on('click', function() {
+  $('.stream').css({'-ms-transform': set});
   $('.stream').css({'-webkit-transform': set});
+  $('.stream').css({'transform': set});
+  $('input').css({'visibility': 'hidden'});
   $('.stream-nav').hide();
   $('.stream-nav-edit').show();
 });
