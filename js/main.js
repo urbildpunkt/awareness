@@ -34,7 +34,7 @@ $('.edit').on('click', function() {
 
 var stream = $('.stream');
 var position = stream.position();
-var fixed = position.top - 50;
+var fixed = position.top - 90;
 var set = 'translateY(-' + fixed + 'px)';
 $('.stream .edit').on('click', function() {
   $('.stream').css({'-ms-transform': set});
