@@ -1,0 +1,265 @@
+<%- partial("_partials/_header") %>
+
+<div class="container-fluid donation-content">
+  <ul class="row">
+    <li class="col-md-8 col-md-push-4">
+      <div class="panel-heading">
+        <div class="panel-title">
+           Make a Donation
+        </div>
+      </div>
+      <div class="row no-gutter bs-wizard" role="tablist">
+        <div class="col-xs-3 bs-wizard-step complete">
+          <div class="text-center bs-wizard-stepnum">Amount</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#amount" class="bs-wizard-dot" role="tab" data-toggle="tab"></a>
+        </div>
+
+        <div class="col-xs-3 bs-wizard-step complete"><!-- complete -->
+          <div class="text-center bs-wizard-stepnum">Payment</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#payment" class="bs-wizard-dot" role="tab" data-toggle="tab"></a>
+        </div>
+
+        <div class="col-xs-3 bs-wizard-step active"><!-- complete -->
+          <div class="text-center bs-wizard-stepnum">Billing</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#billing" class="bs-wizard-dot" role="tab" data-toggle="tab"></a>
+        </div>
+
+        <div class="col-xs-3 bs-wizard-step disabled"><!-- active -->
+          <div class="text-center bs-wizard-stepnum">Success</div>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <a href="#complete" class="bs-wizard-dot" role="tab" data-toggle="tab"></a>
+        </div>
+      </div>
+      <div class="inner">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane" id="amount">
+            <div class="inner">
+              <div class="row">
+                <div class="col-xs-3 col-md-6 col-lg-3">
+                  <button class="btn btn-lg btn-block btn-default">$20</button>
+                </div>
+                <div class="col-xs-3 col-md-6 col-lg-3">
+                  <button class="btn btn-lg btn-block btn-default">$20</button>
+                </div>
+                <div class="col-xs-3 col-md-6 col-lg-3">
+                  <button class="btn btn-lg btn-block btn-default">$20</button>
+                </div>
+                <div class="col-xs-3 col-md-6 col-lg-3">
+                  <button class="btn btn-lg btn-block btn-default">$20</button>
+                </div>
+              </div>
+              <br />
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-dollar"></i></span>
+                  <input type="text" class="form-control" placeholder="40.00">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="payment">
+            <form role="form">
+              <div class="form-group">
+                <label for="card-holder-name">Name</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
+                  <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="billing-email">Email</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-envelope"></i></span>
+                  <input type="text" class="form-control" name="billing-email" id="billing-email" placeholder="Email address">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-credit-card"></i></span>
+                  <input type="text" class="form-control" name="card-number" id="card-number" placeholder="Card Number" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="expiry-month">Expiration Date</label>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-fw fa-calendar"></i></span>
+                        <select class="form-control" name="expiry-month" id="expiry-month">
+                          <option>Month</option>
+                          <option value="01">Jan (01)</option>
+                          <option value="02">Feb (02)</option>
+                          <option value="03">Mar (03)</option>
+                          <option value="04">Apr (04)</option>
+                          <option value="05">May (05)</option>
+                          <option value="06">June (06)</option>
+                          <option value="07">July (07)</option>
+                          <option value="08">Aug (08)</option>
+                          <option value="09">Sep (09)</option>
+                          <option value="10">Oct (10)</option>
+                          <option value="11">Nov (11)</option>
+                          <option value="12">Dec (12)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-4">
+                      <select class="form-control" name="expiry-year">
+                        <option>Year</option>
+                        <option value="13">2013</option>
+                        <option value="14">2014</option>
+                        <option value="15">2015</option>
+                        <option value="16">2016</option>
+                        <option value="17">2017</option>
+                        <option value="18">2018</option>
+                        <option value="19">2019</option>
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-4">
+                      <div class="form-group" style="margin-top: -22px;">
+                        <label for="cvc">Card CVC</label>
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
+                          <input type="text" class="form-control" name="cvv" id="cv" placeholder="Security Code" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+          </div>
+          <div class="tab-pane active" id="billing">
+            <form role="form">
+              <div class="form-group">
+                <label for="full-name">Name</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
+                  <input type="text" class="form-control" name="full-name" id="full-name" placeholder="Full Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="billing-address">Billing Address</label>
+                <label class="sr-only" for="billing-address-1">Address 1</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-building"></i></span>
+                  <input type="text" class="form-control" name="billing-address" id="billing-address-1" placeholder="Address 1">
+                </div>
+                <br />
+                <label class="sr-only" for="billing-address-1">Address 2</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-fw fa-blank"></i></span>
+                  <input type="text" class="form-control" name="billing-address-2" id="billing-address-2" placeholder="Address 2">
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-xs-4">
+                    <label class="sr-only" for="billing-city">City</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-fw fa-blank"></i></span>
+                      <input type="text" class="form-control" name="billing-city" id="billing-city" placeholder="City">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <label class="sr-only" for="billing-state">State</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-fw fa-blank"></i></span>
+                      <input type="text" class="form-control" name="billing-state" id="billing-state" placeholder="State">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <label class="sr-only" for="billing-zip">Zip</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-fw fa-blank"></i></span>
+                      <input type="text" class="form-control" name="billing-zip" id="billing-zip" placeholder="Zip">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkbox well" xstyle="background-image: url(http://shirta.de/media/catalog/product/cache/1/small_image/295x295/9df78eab33525d08d6e5fb8d27136e95/a/n/anonymoose-anonymous-2-d75555427.png); background-position: 100% -50px; background-repeat: no-repeat; padding: 40px 20px">
+                <label for="anonymous">
+                  <input type="checkbox" name="anonymous" id="anonymous"> Make my donation anonymous</a>.
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane" id="complete">
+            Here
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col-xs-6">
+              $Amount
+            </div>
+            <div class="col-xs-6 text-right">
+              <button type="submit" class="btn btn-primary">Continue</button>
+            </div>
+          </div>
+        </div>
+
+    </li>
+    <li class="col-md-4 col-md-pull-8 list">
+      <div class="panel-heading">
+        <div class="panel-title">
+           FAQ
+        </div>
+      </div>
+      <div class="panel-group" id="accordion">
+        <div class="inner">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                Lorem ipsum dolor sit amet?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                Lorem ipsum dolor sit amet?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                Lorem ipsum dolor sit amet?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
