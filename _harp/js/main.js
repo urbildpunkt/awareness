@@ -54,9 +54,7 @@ $('.save').on('click', function() {
 });
 
 
-$('.stream-content li').on('click', function() {
-  $('.stream-content li').not(this).removeClass('col-md-6');
-  $('.stream-content li').not(this).addClass('col-md-3');
-  $(this).removeClass('col-md-3');
-  $(this).addClass('col-md-6');
+$('.col-flex').on('click', function() {
+  $('.col-flex').not(this).removeClass('expand');
+  $(this).toggleClass('expand');
 });
